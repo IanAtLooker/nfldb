@@ -279,6 +279,7 @@
 
   - dimension: play_id
     type: int
+    primary_key: true 
     # hidden: true
     sql: ${TABLE}.play_id
 

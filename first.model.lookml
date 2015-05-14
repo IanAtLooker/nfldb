@@ -6,15 +6,23 @@
 - explore: agg_play
   joins:
     - join: drive
-      foreign_key: drive_id
+      foreign_key: play_id
 
     - join: play
-      foreign_key: play_id
+      sql_on: ${agg_play.gsis_id} = ${play.gsis_id} and ${agg_play.play_id} = ${play.play_id} and ${agg_play.drive_id} = ${play.drive_id}
+   
 
 
 - explore: drive
 
 - explore: game
+  joins:
+    - join: drive
+      foreign_key: gsis_id
+    
+    - join: play
+      foreign_key: gsis_id
+      
 
 - explore: meta
 
@@ -39,4 +47,6 @@
 - explore: player
 
 - explore: team
+
+  
 
