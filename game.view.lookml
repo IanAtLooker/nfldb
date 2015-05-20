@@ -43,6 +43,7 @@
     sql: ${TABLE}.gamekey
 
   - dimension: gsis_id
+    primary_key: true
     sql: ${TABLE}.gsis_id
 
   - dimension: home_score
