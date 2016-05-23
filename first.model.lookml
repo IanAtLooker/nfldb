@@ -18,6 +18,15 @@
 
 
 - explore: drive
+  joins:
+    - join: game
+      foreign_key: gsis_id
+    
+    - join: team
+      sql_on: ${drive.pos_team} = ${team.team_id} 
+      
+    - join: play
+      sql_on: ${drive.gsis_id} = ${play.gsis_id} and ${drive.drive_id} = ${play.drive_id}
 
 - explore: game
   joins:
@@ -26,6 +35,12 @@
 
     - join: play
       foreign_key: gsis_id
+      
+    - join: play_player
+      foreign_key: gsis_id
+      
+    - join: player
+      sql_on: ${play_player.player_id} = ${player.player_id}
       
 
 - explore: meta
@@ -58,6 +73,9 @@
 - explore: player
 
 - explore: team
+  joins:
+    - join: player
+      sql_on: ${team.team_id} = ${player.team} 
 
   
 

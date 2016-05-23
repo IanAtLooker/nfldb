@@ -405,13 +405,17 @@
     type: count
     drill_fields: detail*
     
-  - measure: Total_passing_yards 
+  - measure: total_passing_yards 
     type: sum
     sql: ${passing_yds}
     
-  - measure: Total_Interceptions
+  - measure: total_tnterceptions
     type: sum
     sql: ${passing_int}
+    
+  - measure: total_fumbles_lost
+    type: sum
+    sql: ${fumbles_lost} 
 
 
   # ----- Sets of fields for drilling ------
