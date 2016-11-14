@@ -6,4 +6,5 @@
 - explore: test
 
 - explore: weather_dump
+  access_filter_fields: [weather_dump.feelslike_f]
 
