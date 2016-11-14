@@ -45,6 +45,7 @@
 
   - dimension: feelslike_f
     sql: ${TABLE}.feelslike_f
+    bypass_suggest_restrictions: yes
 
   - dimension: feelslike_string
     sql: ${TABLE}.feelslike_string
