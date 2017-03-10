@@ -13,9 +13,3 @@
 
   - dimension: name
     type: string
-    sql: ${TABLE}.name
-
-  - measure: count
-    type: count
-    drill_fields: [team_id, name]
-

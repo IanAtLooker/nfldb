@@ -53,6 +53,7 @@
 
   - dimension: team
     type: string
+
     sql: ${TABLE}.team
 
   - dimension: uniform_number

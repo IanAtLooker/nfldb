@@ -9,6 +9,7 @@
 
   - dimension: season_type
     type: string
+
     sql: ${TABLE}.season_type
 
   - dimension: season_year

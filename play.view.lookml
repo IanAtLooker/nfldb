@@ -104,13 +104,4 @@
 
   - dimension: yardline
     type: string
-    sql: ${TABLE}.yardline
-
-  - dimension: yards_to_go
-    type: number
-    sql: ${TABLE}.yards_to_go
-
-  - measure: count
-    type: count
-    drill_fields: [play_id, drive.drive_id, agg_play.count, play_player.count]
 
