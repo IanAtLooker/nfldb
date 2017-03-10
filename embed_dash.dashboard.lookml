@@ -16,4 +16,3 @@
     measures: [play_player.rushing_touchdowns]
     sorts: [play_player.rushing_touchdowns desc]
     limit: 500
-    
