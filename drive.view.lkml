@@ -27,6 +27,11 @@ view: drive {
     sql: ${TABLE}.gsis_id ;;
   }
 
+  dimension: now {
+    type: string
+    sql:  current_time ;;
+  }
+
   dimension: penalty_yards {
     type: number
     sql: ${TABLE}.penalty_yards ;;
