@@ -27,8 +27,8 @@ view: drive {
     sql: ${TABLE}.gsis_id ;;
   }
 
-  dimension: now {
-    type: string
+  dimension_group: now {
+    type: time
     sql:  current_time ;;
   }
 
