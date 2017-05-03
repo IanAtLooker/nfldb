@@ -1,4 +1,4 @@
-- dashboard: embed_dash
+- dashboard: embed_dash+ext
   title: Embed Dash
   layout: tile
   tile_size: 100
