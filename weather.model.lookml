@@ -1,2 +1,2 @@
 # Disable model validation
-- connection: weather
+ - connection: weather
