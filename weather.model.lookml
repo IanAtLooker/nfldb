@@ -1,8 +1,9 @@
 #a comment here 
 
 - connection: weather
-
-- include: "*.view.lookml"       # include all the views
+# include all the views
+- include: "*.view.lookml"       
+# include all the views
 - include: "*.dashboard.lookml"  # include all the dashboards
 
 - explore: test
