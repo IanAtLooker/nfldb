@@ -1,3 +1,5 @@
+#a comment here 
+
 - connection: weather
 
 - include: "*.view.lookml"       # include all the views
