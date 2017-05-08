@@ -17,6 +17,9 @@ explore: neighborhoods {}
 explore: sleep_90 {}
 explore: sleep_90_1 {}
 explore: sleep_90_2 {}
+explore: test {}
+explore: test2 {}
+
 
 
 explore: agg_play {
