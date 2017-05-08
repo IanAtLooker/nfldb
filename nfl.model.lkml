@@ -14,6 +14,10 @@ map_layer: my_neighborhood_layer {
 }
 
 explore: neighborhoods {}
+explore: sleep_90 {}
+explore: sleep_90_1 {}
+explore: sleep_90_2 {}
+
 
 explore: agg_play {
   join: drive {
