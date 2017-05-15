@@ -1,8 +1,7 @@
 view: sleep_90 {
   derived_table: {
-    sql_trigger_value: select current_time ;;
-
-    sql: select pg_sleep(90)::varchar
+    sql_trigger_value: select 1 ;;
+    sql: select drive_id from drive where {% condition drive_filter %} drive_id {% endcondition %}
       ;;
   }
 
@@ -13,7 +12,10 @@ view: sleep_90 {
 
   dimension: pg_sleep {
     type: string
-    sql: ${TABLE}.pg_sleep ;;
+    sql: ${TABLE}.drive_id ;;
+  }
+  filter: drive_filter {
+    type: number
   }
 
   set: detail {
