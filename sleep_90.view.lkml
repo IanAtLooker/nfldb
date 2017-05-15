@@ -16,6 +16,7 @@ view: sleep_90 {
   }
   filter: drive_filter {
     type: number
+    default_value: "1"
   }
 
   set: detail {

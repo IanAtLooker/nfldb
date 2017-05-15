@@ -1,6 +1,6 @@
 view: sleep_90_2 {
   derived_table: {
-    sql_trigger_value: select current_time ;;
+#    sql_trigger_value: select current_time ;;
     sql: select pg_sleep(90)::varchar
       ;;
   }
