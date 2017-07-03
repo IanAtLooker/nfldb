@@ -1,8 +1,8 @@
-view: sleep_90_1 {
+view: sleep_90_1_child {
   derived_table: {
     sql_trigger_value: select current_date ;;
 
-    sql: select pg_sleep(90)::varchar
+    sql: select * from ${sleep_90_1.SQL_TABLE_NAME}
       ;;
   }
 
