@@ -20,7 +20,7 @@ explore: sleep_90_2 {}
 explore: test {}
 explore: test2 {}
 
-
+explore: sleep_90_1_child {}
 
 explore: agg_play {
   join: drive {
