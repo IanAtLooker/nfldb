@@ -1,4 +1,4 @@
-connection: "nfldb"
+connection: "weather"
 
 # include all the views
 include: "*.view"
