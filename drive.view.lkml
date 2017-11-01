@@ -7,6 +7,22 @@ view: drive {
     sql: ${TABLE}.drive_id ;;
   }
 
+   filter: my_sweet_filter {
+    suggestions: ["Buyers", "Orders"]
+  }
+
+  measure: agg_test {
+    type: number
+    sql: CASE
+
+WHEN {% condition my_sweet_filter %} 'Buyers' {% endcondition %}
+THEN sum(${drive.first_downs})
+
+WHEN {% condition my_sweet_filter %} 'Orders' {% endcondition %}
+THEN sum(${drive.penalty_yards}) END ;;
+  }
+
+
   dimension: end_field {
     type: string
     sql: ${TABLE}.end_field ;;
